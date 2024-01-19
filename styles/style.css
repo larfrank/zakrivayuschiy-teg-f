@@ -412,7 +412,7 @@
 }
 
 .modal-window-button {
-  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
+  inline-size: clamp(15.8125rem, 14.9982rem + 3.4742vw, 18.125rem);
   min-block-size: 38px;
   font-size: 14px;
   line-height: 90%;
@@ -433,8 +433,12 @@
     margin-inline: 0;
   }
 
-  .floppy {
+  .save {
     scale: 1.333;
+  }
+
+  .modal-window {
+    padding: 32px 42px;
   }
 }
 

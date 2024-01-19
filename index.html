@@ -381,15 +381,15 @@
       <button class="button save-button" type="button" onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id">
         <svg class="floppy">
-          <use href="./svg/floppy.svg#floppy-svg">
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </section>
   </main>
   <dialog id="dialog-id" class="modal-window">
-    <svg class="modal-window-floppy">
-      <use href="./svg/floppy.svg#floppy-svg">
+    <svg class="floppy modal-window-floppy">
+      <use href="./svg/floppy.svg#floppy" />
     </svg>
     <p class="modal-window-text">Вставьте дискету, чтобы продолжить</p>
     <button type="button" class="button modal-window-button" onclick="window['dialog-id'].close()">

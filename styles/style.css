@@ -402,8 +402,6 @@
 }
 
 .modal-window-floppy {
-  inline-size: 21px;
-  block-size: 21px;
   transform-origin: left top;
   scale: 1.86;
 }

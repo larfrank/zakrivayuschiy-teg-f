@@ -19,7 +19,7 @@
 
 <body class="page">
   <header class="header wrapper">
-    <a href="#0" target="_blank" class="header__title-link">&lt;/HTML&gt;</a>
+    <a class="header__title-link">&lt;/HTML&gt;</a>
     <h1 class="header__title">закрывающий тег</h1>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -49,7 +49,7 @@
           <article class="sprint__card">
             <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-zero" src="./images/0.avif" alt="Длиная дорога, уходящая вдаль">
+              <img class="card__image sprint-zero" loading="lazy" src="./images/0.avif" alt="Длиная дорога, уходящая вдаль">
               <p class="card__image-label">заинтересованность</p>
             </div>
             <div class="card__text">
@@ -88,7 +88,7 @@
           <article class="sprint__card">
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-one-start" src="./images/1.1.avif"
+              <img class="card__image sprint-one-start" loading="lazy" src="./images/1.1.avif"
                 alt="Девушка смотрит на морской горизонт">
               <p class="card__image-label">спокойствие</p>
             </div>
@@ -130,7 +130,7 @@
           <article class="sprint__card">
             <h2 class="card__title">1 спринт: А если не получится?</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-one-end" src="./images/1-2.avif"
+              <img class="card__image sprint-one-end" loading="lazy" src="./images/1-2.avif"
                 alt="Девушка в прыжке на фоне морского заката">
               <p class="card__image-label">гордость</p>
             </div>
@@ -171,7 +171,7 @@
           <article class="sprint__card">
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-two-start" src="./images/2-1.avif"
+              <img class="card__image sprint-two-start" loading="lazy" src="./images/2-1.avif"
                 alt="Малькик в очках удивляется, смотря в ноутбук">
               <p class="card__image-label">шок</p>
             </div>
@@ -213,7 +213,7 @@
           <article class="sprint__card">
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-two-end" src="./images/2-2.avif"
+              <img class="card__image sprint-two-end" loading="lazy" src="./images/2-2.avif"
                 alt="Девушка смотрит на часы, сидя перед ноутбуком">
               <p class="card__image-label">дедлайн</p>
             </div>
@@ -256,7 +256,7 @@
           <article class="sprint__card">
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-three-start" src="./images/3-1.avif"
+              <img class="card__image sprint-three-start" loading="lazy" src="./images/3-1.avif"
                 alt="Фото рук, держащих два кусочка пазла">
               <p class="card__image-label">раздумья</p>
             </div>
@@ -297,7 +297,7 @@
           <article class="sprint__card">
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-three-end" src="./images/3-2.avif"
+              <img class="card__image sprint-three-end" loading="lazy" src="./images/3-2.avif"
                 alt="Дувушка сидит перед ноутбуком, сложив голову на руки">
               <p class="card__image-label">сложности</p>
             </div>
@@ -338,7 +338,7 @@
           <article class="sprint__card">
             <h2 class="card__title">«Сейчас я здесь»</h2>
             <div class="card__labled-img">
-              <img class="card__image sprint-four" src="./images/4.avif"
+              <img class="card__image sprint-four" loading="lazy" src="./images/4.avif"
                 alt="Парень показывает сердечко с помощью пальцев, стоя на большой высоте на фоне облаков">
               <p class="card__image-label">принятие</p>
             </div>
@@ -392,9 +392,11 @@
       <use href="./svg/floppy.svg#floppy" />
     </svg>
     <p class="modal-window-text">Вставьте дискету, чтобы продолжить</p>
-    <button type="button" class="button modal-window-button" onclick="window['dialog-id'].close()">
-      <span class="button__text">ок</span>
-    </button>
+    <form method="dialog">
+      <button type="button" class="button modal-window-button" onclick="window['dialog-id'].close()">
+        <span class="button__text">ок</span>
+      </button>
+    </form>
   </dialog>
   <script src="./scripts/like.js"></script>
 </body>
